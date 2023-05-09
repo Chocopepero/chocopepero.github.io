@@ -11,7 +11,9 @@ My GitHub page is http://github.com/chocopepero.
 * Lab 9
 
     Lab 9, part 2 was interesting as it had expanded upon the HiLo game
-    we as a class had been working on in several other labs. First it was
+    we as a class had been working on in several other labs. The objective
+    of this lab was to write code that reads and writes to a file and handles
+    I/O errors. In previous iterations of this code, it was
     an input based game, then it was based off command line arguments,
     and finally this version was based off of a separate .dat file.
     It felt great learning how to expand our programs and give them
@@ -19,6 +21,8 @@ My GitHub page is http://github.com/chocopepero.
 
 * Lab 10
 
+    This lab's objective was to write code that uses 2D vectors, use unit tests
+    to guide us in developing the project, and wrote function definitions.
     Lab 10, part 2 was an incredibly difficult initially. Due to sickness
     I didn't have a lab partner and I was unable to collaborate with other
     students. However, being faced with a mental wall forced me to
@@ -27,6 +31,9 @@ My GitHub page is http://github.com/chocopepero.
 
 * Lab 11
 
+    The lab's objective was to write member functions for object-oriented
+    classes, write code that generates random numbers, and test code
+    with automated unit testing.
     In general, part 1 of the labs were generally easier than part 2.
     However, lab 11 was different in that part 1 was far more challenging
     than part 2. This lab challenged my understanding of 2D vectors

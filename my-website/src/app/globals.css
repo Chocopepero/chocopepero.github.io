@@ -18,10 +18,41 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  cursor: url('/images/aero_arrow.cur'), auto;
 }
+
+a:hover {
+  cursor: url('/images/point_click.cur'), pointer !important;
+}
+
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;  /* Center the footer links */
+  align-items: center;
+  gap: 20px;                /* Add gap between footer links for spacing */
+  padding: 20px;
+  background-color: #1a1a1a;
+  cursor: url('/images/aero_arrow.cur'), auto;
+}
+
+.footer a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #ffffff;
+  cursor: url('/images/point_click.cur'), pointer;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  cursor: url('/images/point_click.cur'), pointer;
 }

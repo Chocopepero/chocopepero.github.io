@@ -11,6 +11,9 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      // cursor: {
+      //   custom: "url('public/images/aero_arrow.cur'), auto",
+      // },
     },
   },
   plugins: [],

@@ -5,6 +5,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --custom-cursor: url('/images/aero_arrow.cur'), auto;
+  --custom-cursor-hover: url('/images/point_click.cur'), pointer;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,15 +16,41 @@
   }
 }
 
+.author{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  cursor: var(--custom-cursor);
+}
+.author-name{
+  color: inherit;
+  font-size: 45px;
+  text-align: center;
+}
+
+.author-links{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  cursor: var(--custom-cursor);
+  width: 32px;
+}
+.author-links img{
+  width: 100%;
+  height: auto;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
-  cursor: url('/images/aero_arrow.cur'), auto;
+  cursor: var(--custom-cursor);
 }
 
 a:hover {
-  cursor: url('/images/point_click.cur'), pointer !important;
+  cursor: var(--custom-cursor-hover);
 }
 
 
@@ -34,25 +62,36 @@ a:hover {
 
 .footer {
   display: flex;
-  justify-content: center;  /* Center the footer links */
+  justify-content: center;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
   align-items: center;
-  gap: 20px;                /* Add gap between footer links for spacing */
+  gap: 40px;       
   padding: 20px;
   background-color: #1a1a1a;
-  cursor: url('/images/aero_arrow.cur'), auto;
+  cursor: var(--custom-cursor);
 }
 
-.footer a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+
+.footer-link {
+  display: flex; /* Makes each link a flex container */
+  align-items: center; /* Aligns image and text vertically */
+  gap: 8px; /* Space between image and text */
   text-decoration: none;
-  color: #ffffff;
-  cursor: url('/images/point_click.cur'), pointer;
+  color: #f0f0f0; /* Color for the text */
+  cursor: var(--custom-cursor-hover);
 }
 
-.footer a:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  cursor: url('/images/point_click.cur'), pointer;
+.footer-link:hover {
+  text-decoration: underline; /* Optional for hover effect */
+  cursor: var(--custom-cursor-hover);
+}
+
+.footer-link img {
+  display: inline-block; /* Keep the image inline with the text */
+  vertical-align: middle; /* Ensure vertical alignment with the text */
+  margin: 0;
+  padding: 0;
+  cursor: var(--custom-cursor-hover);
 }

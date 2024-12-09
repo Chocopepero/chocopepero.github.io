@@ -6,7 +6,7 @@
   --background: #ffffff;
   --foreground: #171717;
   --custom-cursor: url('/images/aero_arrow.cur'), auto;
-  --custom-cursor-hover: url('/images/point_click.cur'), pointer;
+  --custom-cursor-hover: url('/images/point_click.cur'), auto;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,16 +25,20 @@
   cursor: var(--custom-cursor);
 }
 .author-name{
+  display: flex;
+  flex-direction: column;
   color: inherit;
   font-size: 45px;
   text-align: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .author-links{
   display: flex;
   justify-content: center;
   gap: 20px;
-  cursor: var(--custom-cursor);
+  cursor: var(--custom-cursor-hover);
   width: 32px;
 }
 .author-links img{
@@ -47,51 +51,154 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   cursor: var(--custom-cursor);
+
 }
 
 a:hover {
   cursor: var(--custom-cursor-hover);
 }
 
+main {
+  padding: 5px 5px 5px 5px;
+}
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
-
-.footer {
+/* Add a black background color to the top navigation */
+.topnav {
   display: flex;
   justify-content: center;
-  position: sticky;
-  bottom: 0;
-  width: 100%;
   align-items: center;
-  gap: 40px;       
   padding: 20px;
-  background-color: #1a1a1a;
-  cursor: var(--custom-cursor);
+  background-color: #333;
+  overflow: hidden;
 }
 
-
-.footer-link {
-  display: flex; /* Makes each link a flex container */
-  align-items: center; /* Aligns image and text vertically */
-  gap: 8px; /* Space between image and text */
+/* Style the links inside the navigation bar */
+.topnav a {
+  display: flex;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  color: #f0f0f0; /* Color for the text */
-  cursor: var(--custom-cursor-hover);
+  font-size: 17px;
+  gap: 8px;
 }
 
-.footer-link:hover {
-  text-decoration: underline; /* Optional for hover effect */
-  cursor: var(--custom-cursor-hover);
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-.footer-link img {
-  display: inline-block; /* Keep the image inline with the text */
-  vertical-align: middle; /* Ensure vertical alignment with the text */
-  margin: 0;
-  padding: 0;
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #3495eb;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.author-links-container {
+  display: flex;
+  gap: 25px;
+}
+
+
+.page-transition{
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+ /* Style inputs with type="text", select elements and textareas */
+ input[type=text],input[type=email], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  color: #333;
+}
+
+
+input[type=submit] {
+  background-color: #3495eb;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #094982;
+}
+
+/* Add a background color and some padding around the form */
+.contact {
+  margin: auto;
+  width: 70%;
+  border-radius: 5px;
+  background-color: #333;
+  padding: 20px;
+} 
+.container{
+  display: grid;
+  gap: var(--fluid-gap);
+  margin-inline: auto;
+  max-width: 43rem;
+  width: calc(100% - var(--fluid-gap)* 4);
+}
+
+.bio{
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 10px;
+}
+a.bio-link{
+  color:#3495eb;
+  text-decoration: none;
+  transition: color 0.3s ease;
   cursor: var(--custom-cursor-hover);
+}
+a.bio-link:hover{
+  cursor: var(--custom-cursor-hover);
+  color:#094982;
+}
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  /* Display the links vertically instead of horizontally on small screens */
+  .topnav {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .topnav a {
+    padding: 10px;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+  }
+  .contact {
+    width: 100%;
+    padding: 10px;
+  }
+  .bio {
+    width: 90%;
+  }
 }

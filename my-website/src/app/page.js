@@ -7,19 +7,10 @@ import './globals.css';
 export default function Home() {
   const router = useRouter();
 
-  const handleAboutMeRedirect = () => {
-    router.push('/aboutme');
-  };
-
-  const handleProjectRedirect = () => {
-    router.push('/projects');  // Redirect to /projects
-  };
-
-
   return (
     <div className="flex flex-col min-h-screen cursor">
-      <div className="flex items-center justify-center flex-grow">
-        <main className="flex flex-col gap-8 items-center justify-center sm:items-start text-center">
+      <div className="flex justify-center flex-grow mt-8">
+        <main>
           <div className="author">
             <Image
               src="/images/WorryVeryDepressed.png"
@@ -29,23 +20,29 @@ export default function Home() {
               className="author"
             />
             <div className="author-name">
-              <a
-                href="/">
-                Test Name
-              </a>
-              <a href="https://github.com/Chocopepero" target="_blank" className="author-links">
-                <img
-                  className="author-links"
-                  src="/images/github-mark-white.png"
-                  width={32}
-                  height={32}
-                >
-                </img>
-              </a>
+              <Link href="/">Test Name</Link>
+              <div className="author-links-container">
+                <Link href="https://github.com/Chocopepero" target="_blank" className="author-links">
+                  <img
+                    className="author-links"
+                    src="/images/github-mark-white.png"
+                    width={32}
+                    height={32}
+                  />
+                </Link>
+                <Link href="https://www.linkedin.com/in/samkunkim/" target="_blank" className="author-links">
+                  <img
+                    className="author-links"
+                    src="/images/In-White-34.png"
+                    width={32}
+                    height={32}
+                  />
+                </Link>
+              </div>
             </div>
-
           </div>
           <h1 className="flex items-center justify-between p-4 bg-blue-500">HEY KIDS YOU WANA SEE A DEAD BODY?</h1>
+          <br></br>
           <div className="flex gap-4 items-center flex-col sm:flex-row">
             <a
               className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
@@ -73,49 +70,6 @@ export default function Home() {
           </div>
         </main>
       </div>
-      <footer className="footer">
-        <a
-          onClick={handleAboutMeRedirect}
-          className="footer-link"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          About me
-        </a>
-        <a
-          onClick={handleProjectRedirect}
-          className="footer-link"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          My Projects
-        </a>
-        <a
-          href="mailto:samkunkim@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="footer-link"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Email me →
-        </a>
-      </footer>
     </div>
-  )
+  );
 }

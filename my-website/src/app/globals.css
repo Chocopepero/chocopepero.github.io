@@ -116,6 +116,13 @@ main {
   animation: fadeIn 0.5s forwards;
 }
 
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12vh;
+}
+
  /* Style inputs with type="text", select elements and textareas */
  input[type=text],input[type=email], select, textarea {
   width: 100%; /* Full width */
@@ -136,14 +143,13 @@ input[type=submit] {
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
+  cursor: var(--custom-cursor-hover);
 }
 
 input[type=submit]:hover {
   background-color: #094982;
 }
 
-/* Add a background color and some padding around the form */
 .contact {
   margin: auto;
   width: 70%;
@@ -165,21 +171,42 @@ input[type=submit]:hover {
   text-align: left;
   padding: 10px;
 }
-a.bio-link{
-  color:#3495eb;
-  text-decoration: none;
-  transition: color 0.3s ease;
-  cursor: var(--custom-cursor-hover);
+
+.styled-button {
+  display: inline-flex; /* Button-like display */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  padding: 12px 20px; /* Spacing */
+  background-color: #3495eb; /* Button background */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  font-size: 16px; /* Text size */
+  font-weight: 500; /* Font weight */
+  cursor: var(--custom-cursor-hover); /* Ensure custom cursor */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+  gap: 8px; /* Spacing between icon and text */
+  
 }
-a.bio-link:hover{
-  cursor: var(--custom-cursor-hover);
-  color:#094982;
+
+/* Apply hover effect */
+.styled-button:hover {
+  background-color: #094982; /* Darker hover color */
+  cursor: var(--custom-cursor-hover); /* Ensure cursor consistency */
 }
+
+/* Apply cursor to all child elements */
+.styled-button * {
+  cursor: inherit; /* Inherit the cursor from parent */
+}
+
 
 .responsive-image {
   width: 100%;
   height: auto;
 }
+
 
 @media screen and (max-width: 600px) {
   /* Display the links vertically instead of horizontally on small screens */

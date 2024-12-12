@@ -11,6 +11,11 @@ const projects = [
     description: "A game created for FullyHacks 2024, a hackathon hosted by Cal State Fullerton, done in Godot",
     link: "https://github.com/Chocopepero/CPSC362_Project"
   },
+  {
+    title: "Food Waste Tracker",
+    description: "A web app that tracks food waste in a household, built with HTML, CSS, and C++",
+    link: "https://github.com/Chocopepero/CSPC121-Project"
+  },
   // Add more projects here
 ];
 
@@ -18,13 +23,12 @@ export default function ProjectsPage() {
   return (
     <div className="container">
       <div className="projects">
-        <img
-          src="/images/lebum.png"
-          className="responsive-image"
-          alt="Project Image"
-        />
-        <br />
+        <h1>Here are some project's I've worked on:
+          <br />
+          Click on the cards to view the project on GitHub!
+        </h1>
       </div>
+      <br />
       <div className="proj-container">
         {projects.map((project, index) => (
           <a

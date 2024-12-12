@@ -185,11 +185,26 @@ input[type=submit]:hover {
 
 }
 
-.bio, .projects, .intro{
+.bio, .projects{
   max-width: 1000px;
   margin: 0 auto;
-  text-align: left;
   padding: 10px;
+  background-color: rgba(128, 128, 128, 0.5); /* Semi-transparent grey background */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  padding: 20px; /* Optional: Add padding for better spacing */
+
+}
+.projects{
+  font-size: x-large;
+  text-align: center;
+}
+.intro{
+  max-width: 450px;
+  background-color: rgba(128, 128, 128, 0.5); /* Semi-transparent grey background */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  padding: 20px; /* Optional: Add padding for better spacing */
+  text-align: center;
+
 }
 
 .styled-button {
@@ -224,7 +239,7 @@ input[type=submit]:hover {
 
 .responsive-image {
   display: block;
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   margin: 0 auto;
 }

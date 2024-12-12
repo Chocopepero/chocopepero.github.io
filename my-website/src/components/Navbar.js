@@ -20,7 +20,7 @@ const Navbar = () => {
           width={16}
           height={16}
         />
-        About me
+        About Me
       </Link>
       <Link href="/projects" className={currentPath === '/projects' ? 'active' : ''}>
         <Image

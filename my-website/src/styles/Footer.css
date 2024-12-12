@@ -1,0 +1,61 @@
+.footer {
+    display: flex;
+    flex-direction: column; /* Default to column layout */
+    align-items: center; /* Center align content */
+    background-color: #333; /* Dark background similar to the navbar */
+    color: white; /* White text */
+    padding: 10px;
+    font-size: small;
+    margin-top: auto; /* Push footer to the bottom */
+}
+  
+  .footer-content {
+    text-align: center; /* Center text alignment */
+    padding: 10px;
+  }
+  
+  .footer-links {
+    display: flex; /* Horizontal layout for links */
+    flex-wrap: wrap; /* Wrap links to a new line if necessary */
+    justify-content: center; /* Center align links */
+    gap: 10px; /* Space between links */
+  }
+  
+  .footer-links a {
+    color: white; /* Match navbar link color */
+    text-decoration: none;
+    padding: 5px 10px; /* Consistent padding with navbar */
+    border-radius: 5px; /* Rounded corners for links */
+  }
+  
+  .footer-links a:hover {
+    background-color: #555; /* Highlight on hover */
+  }
+  
+  .footer-bottom {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #aaa; /* Subdued color for less emphasis */
+  }
+  
+  @media screen and (max-width: 600px) {
+    .footer {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .footer-content {
+      padding: 5px;
+      font-size: 14px; /* Smaller font size */
+    }
+  
+    .footer-links {
+      flex-direction: column; /* Stack links vertically */
+      gap: 5px; /* Reduce spacing */
+    }
+  
+    .footer-links a {
+      width: 100%; /* Full-width links */
+      text-align: center; /* Center align text */
+    }
+  }
+  

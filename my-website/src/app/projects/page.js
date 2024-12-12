@@ -22,12 +22,14 @@ const projects = [
 export default function ProjectsPage() {
   return (
     <div className="container">
+      <br />
       <div className="projects">
         <h1>Here are some project's I've worked on:
           <br />
           Click on the cards to view the project on GitHub!
         </h1>
       </div>
+      <br />
       <br />
       <div className="proj-container">
         {projects.map((project, index) => (

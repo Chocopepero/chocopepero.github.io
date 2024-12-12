@@ -7,6 +7,13 @@
   --foreground: #171717;
   --custom-cursor: url('/images/aero_arrow.cur'), auto;
   --custom-cursor-hover: url('/images/point_click.cur'), auto;
+  min-height: 100vh;
+}
+html, body {
+  height: 100%; /* Ensure the body fills the viewport */
+  margin: 0; /* Remove default margin */
+  display: flex;
+  flex-direction: column; /* Set the column layout */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,9 +40,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
   padding: 10px;
   cursor: var(--custom-cursor);
+  height: fit-content;
+  max-height: 100%;
 }
 .author-name{
   display: flex;
@@ -45,6 +53,7 @@
   text-align: center;
   align-items: center;
   gap: 10px;
+  max-height: fit-content;
 }
 
 .author-links{
@@ -87,7 +96,6 @@ main {
   align-items: center;
   padding: 20px;
   background-color: #333;
-  overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
@@ -176,6 +184,9 @@ input[type=submit]:hover {
   margin-inline: auto;
   max-width: 43rem;
   width: calc(100% - var(--fluid-gap)* 4);
+  justify-content: center;
+  max-height: fit-content;
+  flex: 1;
 }
 .proj-container{
   display: grid;
@@ -200,11 +211,12 @@ input[type=submit]:hover {
 }
 .intro{
   max-width: 450px;
+  max-height: fit-content;
   background-color: rgba(128, 128, 128, 0.5); /* Semi-transparent grey background */
   border-radius: 8px; /* Optional: Add rounded corners */
   padding: 20px; /* Optional: Add padding for better spacing */
   text-align: center;
-
+  overflow: hidden;
 }
 
 .styled-button {

@@ -29,8 +29,6 @@ export default function ProjectsPage() {
           Click on the cards to view the project on GitHub!
         </h1>
       </div>
-      <br />
-      <br />
       <div className="proj-container">
         {projects.map((project, index) => (
           <a

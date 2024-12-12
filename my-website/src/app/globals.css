@@ -208,6 +208,7 @@ input[type=submit]:hover {
 .projects{
   font-size: x-large;
   text-align: center;
+  margin-bottom: 20px;
 }
 .intro{
   max-width: 450px;

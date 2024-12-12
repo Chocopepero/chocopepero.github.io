@@ -1,5 +1,7 @@
 "use client";
 
+import SkillsSection from "../../components/SkillsSection";
+
 export default function AboutMePage() {
   return (
     <div className="container">
@@ -30,13 +32,14 @@ export default function AboutMePage() {
         </h1>
         <div className="center-container">
         <a
-          class="styled-button"
+          className="styled-button"
           href="/documents/Samuel_Kim_Resume.pdf"
           download
         >
            Download my resume!
         </a>
         </div>
+        <SkillsSection />
       </div>
     </div>
   );

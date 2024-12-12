@@ -17,6 +17,7 @@ const geistMono = localFont({
 export const metadata = {
   title: "Home of Samuel Kim",
   description: "Created with NextJS",
+  icon: "/favicon.ico",
 };
 
 export default function RootLayout({ children }) {

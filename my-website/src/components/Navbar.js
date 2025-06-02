@@ -15,17 +15,17 @@ const Navbar = () => {
       <Link href="/aboutme" className={currentPath === '/aboutme' ? 'active' : ''}>
         <Image
           aria-hidden
-          src="https://nextjs.org/icons/file.svg"
+          src="/images/about_icon.svg"
           alt="File icon"
           width={16}
           height={16}
         />
         About Me
       </Link>
-      <Link href="/projects" className={currentPath === '/projects' ? 'active' : ''}>
+      <Link href="/projects" className={currentPath.startsWith('/projects') ? 'active' : ''}>
         <Image
           aria-hidden
-          src="https://nextjs.org/icons/window.svg"
+          src="/images/project_icon.svg"
           alt="Window icon"
           width={16}
           height={16}
@@ -35,7 +35,7 @@ const Navbar = () => {
       <Link href="/contact" className={currentPath === '/contact' ? 'active' : ''}>
         <Image
           aria-hidden
-          src="https://nextjs.org/icons/globe.svg"
+          src="/images/contact_icon.svg"
           alt="Globe icon"
           width={16}
           height={16}

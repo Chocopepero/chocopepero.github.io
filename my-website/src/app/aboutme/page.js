@@ -6,7 +6,7 @@ export default function AboutMePage() {
   return (
     <div className="container">
       <div className="bio">
-        <img src="/images/TuxPhoto.jpg" className="responsive-image"></img>
+
         <br></br>
 
         <h1>

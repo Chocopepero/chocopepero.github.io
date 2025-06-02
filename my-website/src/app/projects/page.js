@@ -1,10 +1,12 @@
 'use client';
 
+import Link from 'next/link';
+
 const projects = [
   {
     title: "Hotel Blissful Backend",
     description: "Backend for a hotel management system written entirely in C++",
-    link: "https://github.com/Chocopepero/CPSC362_Project"
+    link: "/projects/hotelblissful"
   },
   {
     title: "Untitled FullyHacks Game",
@@ -31,10 +33,9 @@ export default function ProjectsPage() {
       </div>
       <div className="proj-container">
         {projects.map((project, index) => (
-          <a
+          <Link
             key={index}
             href={project.link}
-            target="_blank"
             rel="noopener noreferrer"
             className="card"
           >
@@ -42,7 +43,7 @@ export default function ProjectsPage() {
               <p className="card-title">{project.title}</p>
               <p className="card-para">{project.description}</p>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </div>

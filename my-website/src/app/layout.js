@@ -28,8 +28,7 @@ export default function RootLayout({ children }) {
           <source src="/videos/moon.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <Navbar />
-        <main className="container">{children}</main>
+        {children}
         <Footer />
       </body>
     </html>

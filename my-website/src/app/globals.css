@@ -9,12 +9,8 @@
   --custom-cursor-hover: url('/images/point_click.cur'), auto;
   min-height: 100vh;
 }
-html, body {
-  height: 100%; /* Ensure the body fills the viewport */
-  margin: 0; /* Remove default margin */
-  display: flex;
-  flex-direction: column; /* Set the column layout */
-}
+html, body { height: 100%; }
+.hero-bg   { height: 100dvh; } 
 html {
     scroll-behavior: smooth;
 }

@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white`}>
-        <video autoPlay loop muted className="background-video w-full h-full fixed inset-0 object-cover">
+        <video autoPlay loop muted playsInline className="background-video w-full h-full fixed inset-0 object-cover">
           <source src="/videos/moon.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>

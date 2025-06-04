@@ -100,7 +100,7 @@ export default function Home() {
         </header>
 
         <main className="pt-24 lg:w-[52%] lg:py-24">
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg opacity-90">
+          <div className="bg-gray-800 p-6 rounded-lg shadow-lg opacity-90 text-white">
             <section id="about" className="mb-12 scroll-mt-16 lg:scroll-mt-24">
               <h1>
                 Hi! I'm Samuel Kim, a Computer Science student at California State University, Fullerton.
@@ -143,7 +143,7 @@ export default function Home() {
                     href="https://www.freemrsoftware.com/"
                   >
                     <span>FreEMR - Electronic Medical Record Simulator</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd"></path></svg>
                   </a>
                 </h3>
                 <br />
@@ -158,28 +158,38 @@ export default function Home() {
                 </img>
                 <ul className="mt-4 flex flex-wrap gap-2">
                   <li>
-                    <span className="inline-flex items-center rounded-full bg-gray-200 px-3 py-1 text-sm font-medium text-gray-800">
+                    <span className="inline-flex items-center px-3 py-1 rounded-full bg-gray-200 text-sm font-medium text-gray-800">
                       NextJS
                     </span>
                   </li>
                   <li>
-                    <span className="inline-flex items-center rounded-full bg-gray-200 px-3 py-1 text-sm font-medium text-gray-800">
+                    <span className="inline-flex items-center px-3 py-1 rounded-full bg-gray-200 text-sm font-medium text-gray-800">
                       Django
                     </span>
                   </li>
                   <li>
-                    <span className="inline-flex items-center rounded-full bg-gray-200 px-3 py-1 text-sm font-medium text-gray-800">
+                    <span className="inline-flex items-center px-3 py-1 rounded-full bg-gray-200 text-sm font-medium text-gray-800">
                       PostgreSQL
                     </span>
                   </li>
                   <li>
-                    <span className="inline-flex items-center rounded-full bg-gray-200 px-3 py-1 text-sm font-medium text-gray-800">
+                    <span className="inline-flex items-center px-3 py-1 rounded-full bg-gray-200 text-sm font-medium text-gray-800">
                       Docker
                     </span>
                   </li>
                   <li>
-                    <span className="inline-flex items-center rounded-full bg-gray-200 px-3 py-1 text-sm font-medium text-gray-800">
+                    <span className="inline-flex items-center px-3 py-1 rounded-full bg-gray-200 text-sm font-medium text-gray-800">
                       Agile Methodology
+                    </span>
+                  </li>
+                                    <li>
+                    <span className="inline-flex items-center px-3 py-1 rounded-full bg-gray-200 text-sm font-medium text-gray-800">
+                      Vercel
+                    </span>
+                  </li>
+                                    <li>
+                    <span className="inline-flex items-center px-3 py-1 rounded-full bg-gray-200 text-sm font-medium text-gray-800">
+                      Render
                     </span>
                   </li>
                 </ul>
@@ -192,7 +202,7 @@ export default function Home() {
                     href="https://github.com/Chocopepero/CPSC362_Project"
                   >
                     <span>Hotel Blissful Back End</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd"></path></svg>
                   </a>
                 </h3>
                 <br />
@@ -203,17 +213,17 @@ export default function Home() {
                 </p>
                 <ul className="mt-4 flex flex-wrap gap-2">
                   <li>
-                    <span className="inline-flex items-center rounded-full bg-gray-200 px-3 py-1 text-sm font-medium text-gray-800">
+                    <span className="inline-flex items-center px-3 py-1 rounded-full bg-gray-200 text-sm font-medium text-gray-800">
                       C++
                     </span>
                   </li>
                   <li>
-                    <span className="inline-flex items-center rounded-full bg-gray-200 px-3 py-1 text-sm font-medium text-gray-800">
+                    <span className="inline-flex items-center px-3 py-1 rounded-full bg-gray-200 text-sm font-medium text-gray-800">
                       RESTful API
                     </span>
                   </li>
                   <li>
-                    <span className="inline-flex items-center rounded-full bg-gray-200 px-3 py-1 text-sm font-medium text-gray-800">
+                    <span className="inline-flex items-center px-3 py-1 rounded-full bg-gray-200 text-sm font-medium text-gray-800">
                       CROW Framework
                     </span>
                   </li>
@@ -227,7 +237,7 @@ export default function Home() {
                     href="https://github.com/Chocopepero/DFOScouter"
                   >
                     <span>DFO Scouter</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd"></path></svg>
                   </a>
                 </h3>
                 <br />
@@ -242,12 +252,12 @@ export default function Home() {
                 ></img>
                 <ul className="mt-4 flex flex-wrap gap-2">
                   <li>
-                    <span className="inline-flex items-center rounded-full bg-gray-200 px-3 py-1 text-sm font-medium text-gray-800">
+                    <span className="inline-flex items-center px-3 py-1 rounded-full bg-gray-200 text-sm font-medium text-gray-800">
                       NextJS
                     </span>
                   </li>
                   <li>
-                    <span className="inline-flex items-center rounded-full bg-gray-200 px-3 py-1 text-sm font-medium text-gray-800">
+                    <span className="inline-flex items-center px-3 py-1 rounded-full bg-gray-200 text-sm font-medium text-gray-800">
                       Neople Open API
                     </span>
                   </li>
@@ -259,7 +269,7 @@ export default function Home() {
                     className="inline-flex items-baseline font-medium"
                   >
                     <span>Future Project: Quest Tracker</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd"></path></svg>
                   </a>
                 </h3>
                 <br />
@@ -269,12 +279,12 @@ export default function Home() {
                 </p>
                 <ul className="mt-4 flex flex-wrap gap-2">
                   <li>
-                    <span className="inline-flex items-center rounded-full bg-gray-200 px-3 py-1 text-sm font-medium text-gray-800">
+                    <span className="inline-flex items-center px-3 py-1 rounded-full bg-gray-200 text-sm font-medium text-gray-800">
                       .NET
                     </span>
                   </li>
                   <li>
-                    <span className="inline-flex items-center rounded-full bg-gray-200 px-3 py-1 text-sm font-medium text-gray-800">
+                    <span className="inline-flex items-center px-3 py-1 rounded-full bg-gray-200 text-sm font-medium text-gray-800">
                       C#
                     </span>
                   </li>
@@ -286,7 +296,7 @@ export default function Home() {
                     className="inline-flex items-baseline font-medium"
                   >
                     <span>Future Project: Schedule D Calculator</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd"></path></svg>
                   </a>
                 </h3>
                 <br />
@@ -296,7 +306,7 @@ export default function Home() {
                 </p>
                 <ul className="mt-4 flex flex-wrap gap-2">
                   <li>
-                    <span className="inline-flex items-center rounded-full bg-gray-200 px-3 py-1 text-sm font-medium text-gray-800">
+                    <span className="inline-flex items-center px-3 py-1 rounded-full bg-gray-200 text-sm font-medium text-gray-800">
                       COBOL
                     </span>
                   </li>

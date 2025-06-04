@@ -5,26 +5,37 @@
 
 .bg-video {
   position: fixed;
+  top: 0;
+  left: 0;
   inset: 0;
-  height: 100dvh;
+  height: 100vh;
   width: 100%;
+  background-size: cover;
   object-fit: cover;
   opacity: 0.5;
   z-index: -3;
-  pointer-events: none; 
-} 
+  pointer-events: none;
+}
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
   --custom-cursor: url('/images/aero_arrow.cur'), auto;
   --custom-cursor-hover: url('/images/point_click.cur'), auto;
-  min-height: 100dvh; 
+  min-height: 100dvh;
 }
-html, body { height: 100%; }
-.hero-bg   { height: 100dvh; } 
+
+html,
+body {
+  height: 100%;
+}
+
+.hero-bg {
+  height: 100dvh;
+}
+
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -36,7 +47,7 @@ html {
 
 
 
-.author{
+.author {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,7 +56,8 @@ html {
   height: fit-content;
   max-height: 100%;
 }
-.author-name{
+
+.author-name {
   display: flex;
   flex-direction: column;
   color: inherit;
@@ -56,14 +68,15 @@ html {
   max-height: fit-content;
 }
 
-.author-links{
+.author-links {
   display: flex;
   justify-content: center;
   gap: 20px;
   cursor: var(--custom-cursor-hover);
   width: 32px;
 }
-.author-links img{
+
+.author-links img {
   width: 100%;
   height: auto;
 }
@@ -89,6 +102,7 @@ main {
     text-wrap: balance;
   }
 }
+
 /* Add a black background color to the top navigation */
 .topnav {
   display: flex;
@@ -132,7 +146,7 @@ main {
 }
 
 
-.page-transition{
+.page-transition {
   opacity: 0;
   animation: fadeIn 0.5s forwards;
 }
@@ -144,16 +158,27 @@ main {
   height: 12vh;
 }
 
- /* Style inputs with type="text", select elements and textareas */
- input[type=text],input[type=email], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+input[type=email],
+select,
+textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical;
+  /* Allow the user to vertically resize the textarea (not horizontally) */
   color: #333;
 }
 
@@ -177,8 +202,9 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #333;
   padding: 20px;
-} 
-.container{
+}
+
+.container {
   display: grid;
   gap: var(--fluid-gap);
   margin-inline: auto;
@@ -188,66 +214,96 @@ input[type=submit]:hover {
   max-height: fit-content;
   flex: 1;
 }
-.proj-container{
+
+.proj-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
-  gap: 20px; /* Adjust the gap between cards as needed */
-  justify-content: center; /* Center the cards horizontally */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* Responsive columns */
+  gap: 20px;
+  /* Adjust the gap between cards as needed */
+  justify-content: center;
+  /* Center the cards horizontally */
 
 }
 
-.bio, .projects{
+.bio,
+.projects {
   max-width: 1000px;
   margin: 0 auto;
   padding: 10px;
-  background-color: rgba(128, 128, 128, 0.5); /* Semi-transparent grey background */
-  border-radius: 8px; /* Optional: Add rounded corners */
-  padding: 20px; /* Optional: Add padding for better spacing */
+  background-color: rgba(128, 128, 128, 0.5);
+  /* Semi-transparent grey background */
+  border-radius: 8px;
+  /* Optional: Add rounded corners */
+  padding: 20px;
+  /* Optional: Add padding for better spacing */
 
 }
-.projects{
+
+.projects {
   margin-top: 10px;
   font-size: x-large;
   text-align: center;
   margin-bottom: 20px;
 }
-.intro{
+
+.intro {
   max-width: 450px;
   max-height: fit-content;
-  background-color: rgba(128, 128, 128, 0.5); /* Semi-transparent grey background */
-  border-radius: 8px; /* Optional: Add rounded corners */
-  padding: 20px; /* Optional: Add padding for better spacing */
+  background-color: rgba(128, 128, 128, 0.5);
+  /* Semi-transparent grey background */
+  border-radius: 8px;
+  /* Optional: Add rounded corners */
+  padding: 20px;
+  /* Optional: Add padding for better spacing */
   text-align: center;
   overflow: hidden;
 }
 
 .styled-button {
-  display: inline-flex; /* Button-like display */
-  align-items: center; /* Center content vertically */
-  justify-content: center; /* Center content horizontally */
-  padding: 12px 20px; /* Spacing */
-  background-color: #3495eb; /* Button background */
-  color: white; /* Text color */
-  border: none; /* Remove border */
-  border-radius: 4px; /* Rounded corners */
-  text-decoration: none; /* Remove underline */
-  font-size: 16px; /* Text size */
-  font-weight: 500; /* Font weight */
-  cursor: var(--custom-cursor-hover); /* Ensure custom cursor */
-  transition: background-color 0.3s ease; /* Smooth hover transition */
-  gap: 8px; /* Spacing between icon and text */
-  
+  display: inline-flex;
+  /* Button-like display */
+  align-items: center;
+  /* Center content vertically */
+  justify-content: center;
+  /* Center content horizontally */
+  padding: 12px 20px;
+  /* Spacing */
+  background-color: #3495eb;
+  /* Button background */
+  color: white;
+  /* Text color */
+  border: none;
+  /* Remove border */
+  border-radius: 4px;
+  /* Rounded corners */
+  text-decoration: none;
+  /* Remove underline */
+  font-size: 16px;
+  /* Text size */
+  font-weight: 500;
+  /* Font weight */
+  cursor: var(--custom-cursor-hover);
+  /* Ensure custom cursor */
+  transition: background-color 0.3s ease;
+  /* Smooth hover transition */
+  gap: 8px;
+  /* Spacing between icon and text */
+
 }
 
 /* Apply hover effect */
 .styled-button:hover {
-  background-color: #094982; /* Darker hover color */
-  cursor: var(--custom-cursor-hover); /* Ensure cursor consistency */
+  background-color: #094982;
+  /* Darker hover color */
+  cursor: var(--custom-cursor-hover);
+  /* Ensure cursor consistency */
 }
 
 /* Apply cursor to all child elements */
 .styled-button * {
-  cursor: inherit; /* Inherit the cursor from parent */
+  cursor: inherit;
+  /* Inherit the cursor from parent */
 }
 
 
@@ -260,15 +316,18 @@ input[type=submit]:hover {
 
 
 .card {
-  flex: 1 1 calc(33.333% - 20px); /* Adjust the width and gap as needed */
+  flex: 1 1 calc(33.333% - 20px);
+  /* Adjust the width and gap as needed */
   box-sizing: border-box;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Include box-shadow for smoothness */
-  position: relative; /* Ensure pseudo-elements are positioned correctly */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Include box-shadow for smoothness */
+  position: relative;
+  /* Ensure pseudo-elements are positioned correctly */
   overflow: hidden;
 }
 
@@ -305,7 +364,8 @@ input[type=submit]:hover {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-.card:before, .card:after {
+.card:before,
+.card:after {
   content: "";
   position: absolute;
   top: 0;
@@ -313,22 +373,26 @@ input[type=submit]:hover {
   width: 100%;
   height: 100%;
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
-  transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1); /* Smooth transition */
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  /* Smooth transition */
   z-index: 1;
 }
 
 .card:hover:before {
   transform: translateX(-100%);
-  transition-delay: 0.1s; /* Add a slight delay for smoother animations */
+  transition-delay: 0.1s;
+  /* Add a slight delay for smoother animations */
 }
 
 .card:hover:after {
   transform: translateX(100%);
-  transition-delay: 0.1s; /* Add a slight delay for smoother animations */
+  transition-delay: 0.1s;
+  /* Add a slight delay for smoother animations */
 }
 
 
 @media screen and (max-width: 600px) {
+
   /* Display the links vertically instead of horizontally on small screens */
   .topnav {
     flex-direction: column;
@@ -341,10 +405,12 @@ input[type=submit]:hover {
     width: 100%;
     text-align: center;
   }
+
   .contact {
     width: 100%;
     padding: 10px;
   }
+
   .bio {
     width: 90%;
   }

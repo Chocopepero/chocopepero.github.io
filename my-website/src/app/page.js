@@ -260,12 +260,12 @@ export default function Home() {
                 </ul>
               </div>
 
-              {/* Project 3: CoLabCode (NEW ADDITION) */}
+              {/* Project 3: CoLabCode */}
               <div className="mb-12 group">
                 <h3 className="text-xl font-semibold mb-2">
                   <a
                     className="inline-flex items-center group-hover:text-teal-400 transition-colors"
-                    href="#"
+                    href="https://github.com/JonathanAslam/CoLabCode"
                     target="_blank"
                   >
                     <span>CoLabCode - Real-time Editor</span>
@@ -275,12 +275,6 @@ export default function Home() {
                 <p className="text-sm mb-4">
                   A real-time collaborative code editor featuring live document synchronization, containerized microservices, and version-controlled database schema management.
                 </p>
-                {/* Note: Image source placeholder kept as requested */}
-                <img
-                  className="aspect-video object-cover rounded border-2 border-gray-800 transition group-hover:border-teal-500/50 mb-4"
-                  src="/images/MapleLooks.png" 
-                  alt="CoLabCode Screenshot"
-                />
                 <ul className="flex flex-wrap gap-2">
                    {["Node.js", "React", "Etherpad API", "Flyway", "PostgreSQL"].map(tag => (
                     <li key={tag} className="px-3 py-1 rounded-full bg-teal-400/10 text-xs font-medium text-teal-300 border border-teal-400/20">
